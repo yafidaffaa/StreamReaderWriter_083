@@ -9,13 +9,13 @@ int main() {
 	string baris;
 	string NamaFile;
 
-	cout << "Masukan Nama FIle : ";
+	cout << "Masukan Nama File : ";
 	cin >> NamaFile;
 
 	//membuka file dengan mode menulis
 	ofstream outfile;
 	//menunjuk ke subuah nama file
-	outfile.open(NamaFile + ".txt", ios::out);
+	outfile.open( NamaFile + ".txt", ios::out);
 
 	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
 
@@ -38,7 +38,7 @@ int main() {
 	//membuka file dalam mode membaca
 	ifstream infile;
 	//menunjuk ke sebuah file
-	infile.open(NamaFile, ios::in);
+	infile.open(NamaFile + ".txt", ios::in);
 
 	cout << endl << ">= Membuka dan Membaca file " << endl;
 	//jika file ada maka
