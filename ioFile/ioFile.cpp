@@ -10,7 +10,12 @@ int main() {
 
 	//membuka file dengan mode menulis
 	ofstream outfile;
-	
+	//menunjuk ke subuah nama file
+	outfile.open("contogfile.txt");
+
+	cout << ">= Menulis file, \'q\' untuk keluar" << endl;
+
+
 }
 
 
